@@ -27,15 +27,18 @@
 			<plugin>
   <groupId>org.mule.tools.maven</groupId>
   <artifactId>mule-maven-plugin</artifactId>
-  <version>3.7.1</version>
+  <version>${mule.maven.plugin.version}</version>
   <extensions>true</extensions>
   <configuration>
+	  <classifier>mule-application</classifier>
     <cloudhub2Deployment>
       <uri>https://anypoint.mulesoft.com</uri>
       <provider>MC</provider>
       <environment>Sandbox</environment>
       <target>Cloudhub-US-East-2</target>
       <muleVersion>4.11.3:4e</muleVersion>
+		<releaseChannel>EDGE</releaseChannel>
+            <javaVersion>17</javaVersion>
       <username>${user}</username>
       <password>${pass}</password>
       <applicationName>${applicationName}</applicationName>
