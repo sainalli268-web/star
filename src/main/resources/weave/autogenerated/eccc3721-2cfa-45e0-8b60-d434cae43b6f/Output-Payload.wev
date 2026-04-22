@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_eccc3721_2cfa_45e0_8b60_d434cae43b6f_Output_Payload = Any {"class": "java.lang.Object"}
+
